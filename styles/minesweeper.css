@@ -1,33 +1,179 @@
+/* Game container, holds all things minesweeper */
+.minesweeper-game {
+  /* Sprite sizing */
+  --var-sprite-tile-size: 16px;
+  --var-sprite-smiley-size: 26px;
+  --var-sprite-digit-height: 23px;
+  --var-sprite-digit-width: 13px;
+
+  /* Element sizing */
+  --var-sizing-factor: 1.5;
+  --var-tile-size: calc(--var-sizing-factor * --var-sprite-tile-size);
+  --var-smiley-size: calc(--var-sizing-factor * --var-sprite-smiley-size);
+  --var-digit-height: calc(--var-sizing-factor * --var-sprite-digit-height);
+  --var-digit-width: calc(--var-sizing-factor * --var-sprite-digit-width);
+}
+
+/* Score or Timer - holds (3) digits */
+.digit-container {
+
+}
+
+/* Grid of tiles */
 .board {
-  /* TODO */
+  
 }
 
-/* Tile state = "hidden", and hover */
+.tile {
+  /* Classic theme by default */
+  background: url("../resources/classic.png") no-repeat;
+
+  min-width: var(--var-tile-size);
+
+}
+
+.smiley {
+
+}
+
+
+/** ANALOG DIGITS **/
+.digits > [data-digit="0"] {
+
+}
+
+.digits > [data-digit="1"] {
+
+}
+
+.digits > [data-digit="2"] {
+
+}
+
+.digits > [data-digit="3"] {
+
+}
+
+.digits > [data-digit="4"] {
+
+}
+
+.digits > [data-digit="5"] {
+
+}
+
+.digits > [data-digit="6"] {
+
+}
+
+.digits > [data-digit="7"] {
+
+}
+
+.digits > [data-digit="8"] {
+
+}
+
+.digits > [data-digit="9"] {
+
+}
+
+
+/** SMILEY FACES **/
+
+.board > [data-smiley-state="happy"] {
+
+}
+
+.board > [data-smiley-state="happy"].down {
+
+}
+
+.board > [data-smiley-state="excited"] {
+
+}
+
+.board > [data-smiley-state="sunny"] {
+
+}
+
+.board > [data-smiley-state="dead"] {
+
+}
+
+
+/** TILES - CONTROLS **/
+
 .board > [data-tile-state="hidden"] {
-
+  background-position: 0 -51px;
 }
 
-.board > [data-tile-state="hidden"]:hover {
-
+.board > [data-tile-state="hidden"].down {
+  background-position: 17 -51px;
 }
 
-/* Tile state = "flagged", and hover */
 .board > [data-tile-state="flagged"] {
 
 }
 
-.board > [data-tile-state="flagged"]:hover {
+.board > [data-tile-state="flagged"].down {
 
 }
 
-/* Tile state = "question", and hover */
-.board > [data-tile-state="flagged"] {
+.board > [data-tile-state="question"] {
 
 }
 
-.board > [data-tile-state="flagged"]:hover {
+.board > [data-tile-state="question"].down {
+  /* replace inner and outer */
 
 }
 
-/* Tile state = {numbers 1-8}, and hover */
-.board > [data-tile-value=""]
+
+/** TILES - MINES: all are down **/
+.board > [data-tile-state="mine"] {
+  
+}
+
+.board > [data-tile-state="kill-mine"] {
+
+}
+
+.board > [data-tile-state="no-mine"] {
+
+}
+
+
+/** TILES - NUMBERS: data-tile-state = {numbers 1-8}; all are down **/
+
+.board > [data-tile-state="1"] {
+  
+}
+
+.board > [data-tile-state="2"] {
+
+}
+
+.board > [data-tile-state="3"] {
+
+}
+
+.board > [data-tile-state="4"] {
+
+}
+
+.board > [data-tile-state="5"] {
+
+}
+
+.board > [data-tile-state="6"] {
+
+}
+
+.board > [data-tile-state="7"] {
+
+}
+
+.board > [data-tile-state="8"] {
+
+}
