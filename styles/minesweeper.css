@@ -12,6 +12,10 @@
   --var-smiley-size: calc(--var-sizing-factor * --var-sprite-smiley-size);
   --var-digit-height: calc(--var-sizing-factor * --var-sprite-digit-height);
   --var-digit-width: calc(--var-sizing-factor * --var-sprite-digit-width);
+
+  /* Grid sizing */
+  --var-grid-height: 10;
+  --var-grid-width: 10;
 }
 
 /* Score or Timer, holds (3) digits */
@@ -24,18 +28,28 @@
 /* Grid of tiles */
 .board {
   background-color: #00b483;
+  display: grid;
+  grid-template-rows: repeat(--var-grid-height, 1fr);
+  grid-template-columns: repeat(--var-grid-width, 1fr);
+  /* justify-content: center; */
+  /* align-content: center; */
 }
 
 .tile {
   /* Classic theme by default */
   background: url("../resources/classic.png") no-repeat;
-
-  min-width: var(--var-tile-size);
-
+  width: var(--var-tile-size);
 }
 
 .smiley {
-  min-width: var(--var-smiley-size);
+  background: url("../resources/classic.png") no-repeat;
+  width: var(--var-smiley-size);
+}
+
+.digit {
+  background: url("../resources/classic.png") no-repeat;
+  height: var(--var-digit-height);
+  width: var(--var-digit-width);
 }
 
 
