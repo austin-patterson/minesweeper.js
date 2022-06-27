@@ -1,26 +1,30 @@
 import './style.css'
-import './src/minesweeper.js/minesweeper'
-import { genGame as genGameAtElement } from './src/minesweeper.js/minesweeper';
+import './src/minesweeper.js/minesweeper.vanilla'
+import { genGame as genMinesweeperJS } from './src/minesweeper.js/minesweeper.vanilla';
 
 // Constants
-
+let appRoot
 
 // Functions
 const initApp = () => {
-  document.querySelector('#app').innerHTML = `
+  const appBase =  `
     <h1>Hello Vite!</h1>
     <a href="https://vitejs.dev/guide/features.html" target="_blank">Documentation</a>
-
-    <div id="minesweeper-js"></div>
   `
+  if (!appRoot) appRoot = document.querySelector('#app')
+  appRoot.innerHTML = appBase
 }
 
+const initVanilla = () => {
+  const vanillaRoot = `
+    <div id="minesweeper-js"></div>
+  `
+  appRoot.innerHTML += vanillaRoot
+  
+  genMinesweeperJS('#minesweeper-js')
+}
 
 // Main
 
-function main() {
-  initApp();
-  genGameAtElement('#minesweeper-js');
-}
-
-main()
+initApp()
+initVanilla()

@@ -97,95 +97,95 @@
 
 /** SMILEY FACES **/
 
-.board > [data-smiley-state="happy"] {
+.board > [data-state="happy"] {
   background-position: 0px 26px;
 }
 
-.board > [data-smiley-state="happy"].down {
+.board > [data-state="happy"].down {
   background-position: 27px 26px;
 }
 
-.board > [data-smiley-state="excited"] {
+.board > [data-state="excited"] {
   background-position: 54px 26px;
 }
 
-.board > [data-smiley-state="sunny"] {
+.board > [data-state="sunny"] {
   background-position: 81px 26px;
 }
 
-.board > [data-smiley-state="dead"] {
+.board > [data-state="dead"] {
   background-position: 108px 26px;
 }
 
 
 /** TILES - CONTROLS **/
 
-.board > [data-tile-state="hidden"] {
+.board > [data-state="hidden"] {
   background-position: 0px -51px;
 }
 
-.board > [data-tile-state="hidden"].down {
+.board > [data-state="hidden"].down {
   background-position: 17px -51px;
 }
 
-.board > [data-tile-state="flagged"] {
+.board > [data-state="flagged"] {
   background-position: 34px -51px;
 }
 
-.board > [data-tile-state="question"] {
+.board > [data-state="question"] {
   background-position: 51px -51px;
 }
 
-.board > [data-tile-state="question"].down {
+.board > [data-state="question"].down {
   /* replace inner and outer */
   background-position: 68px -51px;
 }
 
 
 /** TILES - MINES: all are down **/
-.board > [data-tile-state="mine"] {
+.board > [data-state="mine"] {
   background-position: 85px -51px;
 }
 
-.board > [data-tile-state="mine-lose"] {
+.board > [data-state="mine-lose"] {
   background-position: 102px -51px;
 }
 
-.board > [data-tile-state="mine-wrong"] {
+.board > [data-state="mine-wrong"] {
   background-position: 119px -51px;
 }
 
 
-/** TILES - NUMBERS: data-tile-state = {numbers 1-8} // all are down **/
+/** TILES - NUMBERS: data-state = {numbers 1-8} // all are down **/
 
-.board > [data-tile-state="1"] {
+.board > [data-state="1"] {
   background-position: 0px -68px;
 }
 
-.board > [data-tile-state="2"] {
+.board > [data-state="2"] {
   background-position: 17px -68px;
 }
 
-.board > [data-tile-state="3"] {
+.board > [data-state="3"] {
   background-position: 34px -68px;
 }
 
-.board > [data-tile-state="4"] {
+.board > [data-state="4"] {
   background-position: 51px -68px;
 }
 
-.board > [data-tile-state="5"] {
+.board > [data-state="5"] {
   background-position: 68px -68px;
 }
 
-.board > [data-tile-state="6"] {
+.board > [data-state="6"] {
   background-position: 85px -68px;
 }
 
-.board > [data-tile-state="7"] {
+.board > [data-state="7"] {
   background-position: 102px -68px;
 }
 
-.board > [data-tile-state="8"] {
+.board > [data-state="8"] {
   background-position: 119px -68px;
 }
