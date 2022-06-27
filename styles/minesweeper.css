@@ -14,14 +14,14 @@
   --var-digit-width: calc(--var-sizing-factor * --var-sprite-digit-width);
 }
 
-/* Score or Timer - holds (3) digits */
+/* Score or Timer, holds (3) digits */
 .digit-container {
 
 }
 
 /* Grid of tiles */
 .board {
-  
+  background-color: #00b483;
 }
 
 .tile {
@@ -33,49 +33,49 @@
 }
 
 .smiley {
-
+  min-width: var(--var-smiley-size);
 }
 
 
 /** ANALOG DIGITS **/
 .digits > [data-digit="0"] {
-
+  background-position: 126px 0px;
 }
 
 .digits > [data-digit="1"] {
-
+  background-position: 0px 0px;
 }
 
 .digits > [data-digit="2"] {
-
+  background-position: 14px 0px;
 }
 
 .digits > [data-digit="3"] {
-
+  background-position: 28px 0px;
 }
 
 .digits > [data-digit="4"] {
-
+  background-position: 42px 0px;
 }
 
 .digits > [data-digit="5"] {
-
+  background-position: 56px 0px;
 }
 
 .digits > [data-digit="6"] {
-
+  background-position: 70px 0px;
 }
 
 .digits > [data-digit="7"] {
-
+  background-position: 84px 0px;
 }
 
 .digits > [data-digit="8"] {
-
+  background-position: 98px 0px;
 }
 
 .digits > [data-digit="9"] {
-
+  background-position: 112px 0px;
 }
 
 
@@ -105,75 +105,71 @@
 /** TILES - CONTROLS **/
 
 .board > [data-tile-state="hidden"] {
-  background-position: 0 -51px;
+  background-position: 0px -51px;
 }
 
 .board > [data-tile-state="hidden"].down {
-  background-position: 17 -51px;
+  background-position: 17px -51px;
 }
 
 .board > [data-tile-state="flagged"] {
-
-}
-
-.board > [data-tile-state="flagged"].down {
-
+  background-position: 34px -51px;
 }
 
 .board > [data-tile-state="question"] {
-
+  background-position: 51px -51px;
 }
 
 .board > [data-tile-state="question"].down {
   /* replace inner and outer */
-
+  background-position: 68px -51px;
 }
 
 
 /** TILES - MINES: all are down **/
 .board > [data-tile-state="mine"] {
-  
+  background-position: 85px -51px;
 }
 
-.board > [data-tile-state="kill-mine"] {
-
+.board > [data-tile-state="mine-lose"] {
+  background-position: 102px -51px;
 }
 
-.board > [data-tile-state="no-mine"] {
-
+.board > [data-tile-state="mine-wrong"] {
+  background-position: 119px -51px;
 }
 
 
-/** TILES - NUMBERS: data-tile-state = {numbers 1-8}; all are down **/
+/** TILES - NUMBERS: data-tile-state = {numbers 1-8} // all are down **/
 
 .board > [data-tile-state="1"] {
-  
+  background-position: 0px -68px;
 }
 
 .board > [data-tile-state="2"] {
-
+  background-position: 17px -68px;
 }
 
 .board > [data-tile-state="3"] {
-
+  background-position: 34px -68px;
 }
 
 .board > [data-tile-state="4"] {
-
+  background-position: 51px -68px;
 }
 
 .board > [data-tile-state="5"] {
-
+  background-position: 68px -68px;
 }
 
 .board > [data-tile-state="6"] {
-
+  background-position: 85px -68px;
 }
 
 .board > [data-tile-state="7"] {
-
+  background-position: 102px -68px;
 }
 
 .board > [data-tile-state="8"] {
-
+  background-position: 119px -68px;
 }

@@ -8,8 +8,8 @@
 56		-0		13		23		#digit 5
 70		-0		13		23		#digit 6
 84		-0		13		23		#digit 7
-112		-0		13		23		#digit 9
 98		-0		13		23		#digit 8
+112		-0		13		23		#digit 9
 0			-24		26		26		#smile init
 27		-24		26		26		#smile pressed
 54		-24		26		26		#smile wonder
