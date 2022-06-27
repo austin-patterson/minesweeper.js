@@ -1,0 +1,33 @@
+.board {
+  /* TODO */
+}
+
+/* Tile state = "hidden", and hover */
+.board > [data-tile-state="hidden"] {
+
+}
+
+.board > [data-tile-state="hidden"]:hover {
+
+}
+
+/* Tile state = "flagged", and hover */
+.board > [data-tile-state="flagged"] {
+
+}
+
+.board > [data-tile-state="flagged"]:hover {
+
+}
+
+/* Tile state = "question", and hover */
+.board > [data-tile-state="flagged"] {
+
+}
+
+.board > [data-tile-state="flagged"]:hover {
+
+}
+
+/* Tile state = {numbers 1-8}, and hover */
+.board > [data-tile-value=""]

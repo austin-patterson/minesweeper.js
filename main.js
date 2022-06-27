@@ -1,4 +1,5 @@
 import './style.css'
+import './src/minesweeper.js/minesweeper'
 
 document.querySelector('#app').innerHTML = `
   <h1>Hello Vite!</h1>
