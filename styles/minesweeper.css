@@ -8,14 +8,20 @@
 
   /* Element sizing */
   --var-sizing-factor: 1.5;
-  --var-tile-size: calc(--var-sizing-factor * --var-sprite-tile-size);
-  --var-smiley-size: calc(--var-sizing-factor * --var-sprite-smiley-size);
-  --var-digit-height: calc(--var-sizing-factor * --var-sprite-digit-height);
-  --var-digit-width: calc(--var-sizing-factor * --var-sprite-digit-width);
+  --var-tile-size: calc(var(--var-sizing-factor) * var(--var-sprite-tile-size));
+  --var-smiley-size: calc(var(--var-sizing-factor) * var(--var-sprite-smiley-size));
+  --var-digit-height: calc(var(--var-sizing-factor) * var(--var-sprite-digit-height));
+  --var-digit-width: calc(var(--var-sizing-factor) * var(--var-sprite-digit-width));
 
   /* Grid sizing */
   --var-grid-height: 10;
   --var-grid-width: 10;
+
+  /* Other styles */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
 }
 
 /* Score or Timer, holds (3) digits */
@@ -29,15 +35,17 @@
 .board {
   background-color: #00b483;
   display: grid;
-  grid-template-rows: repeat(--var-grid-height, 1fr);
-  grid-template-columns: repeat(--var-grid-width, 1fr);
+  grid-template-rows: repeat(var(--var-grid-height), 1fr);
+  grid-template-columns: repeat(var(--var-grid-width), 1fr);
   /* justify-content: center; */
   /* align-content: center; */
+  width: fit-content;
 }
 
 .tile {
   /* Classic theme by default */
   background: url("../resources/classic.png") no-repeat;
+  height: var(--var-tile-size);
   width: var(--var-tile-size);
 }
 
