@@ -16,7 +16,9 @@
 
 /* Score or Timer, holds (3) digits */
 .digit-container {
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Grid of tiles */
@@ -82,23 +84,23 @@
 /** SMILEY FACES **/
 
 .board > [data-smiley-state="happy"] {
-
+  background-position: 0px 26px;
 }
 
 .board > [data-smiley-state="happy"].down {
-
+  background-position: 27px 26px;
 }
 
 .board > [data-smiley-state="excited"] {
-
+  background-position: 54px 26px;
 }
 
 .board > [data-smiley-state="sunny"] {
-
+  background-position: 81px 26px;
 }
 
 .board > [data-smiley-state="dead"] {
-
+  background-position: 108px 26px;
 }
 
 
