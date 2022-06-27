@@ -1,6 +1,6 @@
 import './style.css'
-import './src/minesweeper.js/minesweeper.vanilla'
-import { genGame as genMinesweeperJS } from './src/minesweeper.js/minesweeper.vanilla';
+import './src/minesweeper.vanilla.js/minesweeper.vanilla'
+import { genGame as genMinesweeperJS } from './src/minesweeper.vanilla.js/minesweeper.vanilla';
 
 // Constants
 let appRoot

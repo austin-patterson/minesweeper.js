@@ -33,7 +33,7 @@
 
 /* Grid of tiles */
 .board {
-  background-color: #00b483;
+  background-color: #c0c0c0;
   display: grid;
   grid-template-rows: repeat(var(--var-grid-height), 1fr);
   grid-template-columns: repeat(var(--var-grid-width), 1fr);

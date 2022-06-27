@@ -1,4 +1,6 @@
 import '../../styles/minesweeper.css'
+import '../minesweeper.js/minesweeper.js'
+import { Minesweeper } from '../minesweeper.js/minesweeper.js'
 
 // TODO? Consider changing this into a class?
 
@@ -35,6 +37,8 @@ export function genGame(querySelector, rows = 10, cols = 10) {
   gameRootElement.appendChild(boardElement)
   
   console.log('%c[END] init minesweeper.vanilla.js', "color: #17c6da")
+
+  let minesweeper = new Minesweeper(10, 10, null, null)
 }
 
 // Helper functions
